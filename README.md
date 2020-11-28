@@ -1,1 +1,1 @@
-# HTMLExercises_CakeShop
+# HTML Exercises (Cake Shop)
