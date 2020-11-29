@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
     <!-- hover CSS -->
     <!-- <link rel="stylesheet" href="css/hover-min.css" /> -->
     <!-- jquery -->
@@ -23,11 +25,13 @@
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- fancybox JS -->
+    <script src="js/jquery.fancybox.min.js"></script>
     <title>Sift 巧克力蛋糕 - 蛋糕 | Sift Desserts</title>
   </head>
   <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg nav-link navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg nav-link navbar-light bg-white py-2">
       <div class="container">
         <!-- Brand Logo -->
         <a class="navbar-brand" href="index.html"><img src="img/logo_hori.png" alt="Sift Desserts Logo" height="30" /></a>
@@ -74,7 +78,7 @@
             <li class="nav-item">
               <a class="nav-link" href="cart.html" data-toggle="modal" data-target="#cart_modal">
                 <i class="fas fa-shopping-cart"></i>
-                TWD$ 1,350
+                <span class="cart-tag">3</span>
               </a>
             </li>
           </ul>
@@ -84,169 +88,73 @@
 
     <!-- Contect -->
     <div class="container">
-      <div class="row bg-white py-5">
-        <!-- Cards -->
-        <div class="col-12">
-          <!-- Product list -->
-          <div class="album">
-            <div class="pb-3">
-              <h5>
-                <small><a href="index.html">首頁</a> > <a href="wholecake.html">蛋糕</a> > Sift 巧克力蛋糕</small>
-              </h5>
-            </div>
+      <div class="row bg-white py-4">
+        <!-- Product image -->
+        <div class="col-12 col-md-6">
+          <div>
+            <a href="img/whole_cake/5719_L.jpg" data-fancybox="images" data-caption="My caption">
+              <img src="img/whole_cake/5719_L.jpg" alt="" class="mw-100" />
+            </a>
+          </div>
+        </div>
+        <!-- Product details -->
+        <div class="col-12 col-md-6 px-4" id="product_detail">
+          <div class="pb-3">
+            <p class="text-muted">
+              <small><a href="index.html" class="text-muted">首頁</a> > <a href="wholecake.html" class="text-muted">蛋糕</a> > Sift 巧克力蛋糕</small>
+            </p>
+          </div>
+          <div class="pt-2 pb-3">
+            <h3>Sift 巧克力蛋糕 (8吋)</h3>
+            <p>NT$450</p>
+          </div>
+          <div class="pt-2 pb-5">
+            <p>
+              產品資訊<br />
+              <small>
+                - 產品大小 : 8吋<br />
+                - 成分 : 巧克力戚風蛋糕、巧克力鮮奶油、卡士達餡、巧克力淋面
+              </small>
+            </p>
+          </div>
+          <div class="pt-2 pb-3">
             <div class="row">
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5719.jpg" alt="Cakes" />
-                  <span class="card-label-1 new-product text-center">
-                    <div class="v-center">NEW</div>
-                  </span>
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">Sift 巧克力蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="product-0001.html" class="stretched-link"></a>
-                  </div>
+              <div class="col-12">
+                <p>購買數量</p>
+              </div>
+              <div class="col-4">
+                <div class="number-input md-number-input">
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                  <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                 </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5720.jpg" alt="Cakes" />
-                  <span class="card-label-1 dis-product">
-                    <div class="v-center">70%</div>
-                  </span>
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">焦糖蘋果</p>
-                    <p class="card-text price-tag m-1">NT$315&nbsp;&nbsp;&nbsp;<del>NT$450</del></p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5721.jpg" alt="Cakes" />
-                  <span class="card-label-1 dis-product">
-                    <div class="v-center">70%</div>
-                  </span>
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">巧克力榛子蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$315&nbsp;&nbsp;&nbsp;<del>NT$450</del></p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5722.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">草莓覆盆子蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5724.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">Sift 巧克力蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5725.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">焦糖蘋果</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5726.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">巧克力榛子蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5728.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">草莓覆盆子蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5729.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">Sift 巧克力蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5730.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">焦糖蘋果</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5731.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">巧克力榛子蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="card mb-4 border-0">
-                  <img class="card-img-top" src="img/whole_cake/5732.jpg" alt="Cakes" />
-                  <div class="card-body py-3">
-                    <p class="card-title title-tag m-1">草莓覆盆子蛋糕</p>
-                    <p class="card-text price-tag m-1">NT$450</p>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
+              <div class="col-8">
+                <a href="#">
+                  <button type="button" class="btn btn-pink btn-cart">加入購物車</button>
+                </a>
               </div>
             </div>
-            <div class="d-flex justify-content-center">
-              <nav aria-label="Page navigation">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                  </li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+          </div>
+          <div class="pt-2 pb-3">
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <small><i class="far fa-heart pr-3"></i>加入收藏</small>
+                </a>
+              </div>
+              <div class="col-9">
+                <a href="#">
+                  <small><i class="fas fa-share-alt pr-3"></i>分享</small>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <!-- Description -->
+      <div class="row py-5">
+        <div class="col-12">詳情資訊</div>
       </div>
     </div>
 
