@@ -90,7 +90,7 @@
     <div class="container">
       <div class="row bg-white py-4">
         <!-- Product image -->
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <div>
             <a href="img/whole_cake/5719_L.jpg" data-fancybox="images" data-caption="My caption">
               <img src="img/whole_cake/5719_L.jpg" alt="" class="mw-100" />
@@ -98,7 +98,7 @@
           </div>
         </div>
         <!-- Product details -->
-        <div class="col-12 col-md-6 px-4" id="product_detail">
+        <div class="col-12 col-lg-6 px-4" id="product_detail">
           <div class="pb-3">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-white p-0">
@@ -126,17 +126,21 @@
               <div class="col-12">
                 <p>購買數量</p>
               </div>
-              <div class="col-6">
-                <div class="number-input md-number-input">
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                  <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+              <div class="col-4">
+                <div class="d-flex position-absolute">
+                  <div class="number-input md-number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                  </div>
                 </div>
               </div>
-              <div class="col-6">
-                <a href="#">
-                  <button type="button" class="btn btn-pink btn-cart">加入購物車</button>
-                </a>
+              <div class="col-8">
+                <div class="d-flex">
+                  <a href="#">
+                    <button type="button" class="btn btn-pink btn-cart">加入購物車</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
