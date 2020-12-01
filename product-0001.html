@@ -126,19 +126,31 @@
               <div class="col-12">
                 <p>購買數量</p>
               </div>
-              <div class="col-4">
-                <div class="d-flex position-absolute">
+              <!-- <div class="col-12 col-lg-4">
+                <div class="w-100 text-center v-center">
                   <div class="number-input md-number-input">
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
                     <input class="quantity" min="0" name="quantity" value="1" type="number" />
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                   </div>
                 </div>
+              </div> -->
+
+              <div class="col-12 col-lg-4 mb-2">
+                <div class="w-100 text-center v-center">
+                  <button class="d-inline bg-white border-0 h-4rem" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus"></i></button>
+                  <input class="d-inline w-50 text-center border-0 h-4rem" min="0" name="quantity" value="1" type="number" />
+                  <button class="d-inline bg-white border-0 h-4rem" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus"></i></button>
+                </div>
               </div>
-              <div class="col-8">
-                <div class="d-flex">
+
+              <div class="col-12 col-lg-8 mb-2">
+                <div class="w-100">
                   <a href="#">
-                    <button type="button" class="btn btn-pink btn-cart">加入購物車</button>
+                    <!-- <button type="button" class="btn btn-pink btn-cart">加入購物車</button> -->
+                    <div class="d-block bg-pink text-light h-4rem">
+                      <div class="text-center v-center">加入購物車</div>
+                    </div>
                   </a>
                 </div>
               </div>
