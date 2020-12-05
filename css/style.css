@@ -11,6 +11,18 @@ video {
   z-index: -1;
 }
 
+@media (max-width: 576px) {
+  #home_title h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* @media (min-width: 992px) {
+  #home_title h1 {
+    font-size: 2.5rem;
+  }
+} */
+
 a {
   color: #343a40;
   text-decoration: none;
@@ -290,6 +302,33 @@ Card Label
   border-radius: 50%;
   display: inline-block;
 }
+
+@media (max-width: 768px) {
+  .card-label-1 {
+    top: 0.5rem;
+    left: 0.5em;
+  }
+  .card-label-2 {
+    top: 2.5rem;
+    left: 0.5em;
+  }
+  .new-product {
+    height: 30px;
+    width: 30px;
+    font-size: 0.5rem;
+  }
+  .hot-product {
+    height: 30px;
+    width: 30px;
+    font-size: 0.5rem;
+  }
+  .dis-product {
+    height: 30px;
+    width: 30px;
+    font-size: 0.5rem;
+  }
+}
+
 .v-center {
   text-align: center;
   position: relative;
