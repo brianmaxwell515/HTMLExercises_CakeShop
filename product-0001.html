@@ -10,23 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
-    <!-- Bootstrap -->
+    <!-- Bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <!-- Custom css -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+    <!-- flickity slider css -->
+    <link rel="stylesheet" href="css/flickity.css" media="screen" />
     <!-- jquery -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <!-- fancybox  -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+    <!-- Bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- fancybox js -->
     <script src="js/jquery.fancybox.min.js"></script>
     <!-- notify -->
     <script src="js/notify.min.js"></script>
     <!-- flickity slider -->
-    <link rel="stylesheet" href="css/flickity.css" media="screen" />
     <script src="js/flickity.pkgd.min.js"></script>
 
     <title>Sift 巧克力蛋糕 - 蛋糕 | Sift Desserts</title>
@@ -102,7 +105,7 @@
         <div class="col-12 col-lg-6">
           <div class="row mb-3">
             <div class="col-12 mb-3">
-              <div class="carousel" data-flickity='{ "wrapAround": true }'>
+              <div class="carousel" data-flickity='{ "wrapAround": true, "imagesLoaded": true}'>
                 <div class="carousel-cell">
                   <a href="img/whole_cake/5719_L.jpg" data-fancybox="images" data-caption="Sift 巧克力蛋糕 (8吋)">
                     <img src="img/whole_cake/5719_L.jpg" alt="" class="mw-100" />
@@ -352,7 +355,7 @@
               </td>
               <td>Chocolate cake 2</td>
               <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input1" value="1" /></td>
+              <td class="qty"><input type="text" class="form-control" id="input2" value="1" /></td>
               <!-- <td>$450</td> -->
               <td>
                 <a href="#" class="text-pink">
@@ -366,7 +369,7 @@
               </td>
               <td>Chocolate cake 3</td>
               <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input1" value="1" /></td>
+              <td class="qty"><input type="text" class="form-control" id="input3" value="1" /></td>
               <!-- <td>$450</td> -->
               <td>
                 <a href="#" class="text-pink">
