@@ -60,11 +60,27 @@
 
           <!-- Nav info & cart -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item hvr-underline-from-center px-2">
-              <a class="nav-link" href="register.html">註冊 </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><i class="fas fa-user-circle"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item hvr-underline-from-center" href="register.html">註冊</a></li>
+                <li><a class="dropdown-item hvr-underline-from-center" href="login.html">登入</a></li>
+              </ul>
             </li>
-            <li class="nav-item hvr-underline-from-center px-2">
-              <a class="nav-link" href="login.html">登入 </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><i class="fas fa-user-circle"></i> brianmaxwell515 </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item hvr-underline-from-center" href="#">用戶資訊</a></li>
+                <li><a class="dropdown-item hvr-underline-from-center" href="#">我的收藏</a></li>
+                <li><a class="dropdown-item hvr-underline-from-center" href="#">交易紀錄</a></li>
+                <li><a class="dropdown-item hvr-underline-from-center" href="#">登出</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html" data-toggle="modal" data-target="#cart_modal">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-tag">3</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -75,46 +91,32 @@
       <div class="row mx-0 my-5 m-lg-5">
         <div class="col-12 col-lg-6">
           <div class="container">
-            <div class="signup-content">
-              <div class="signup-form">
-                <h2 class="mb-3">用戶註冊</h2>
-                <form method="POST" class="register-form" id="register-form">
-                  <div class="form-group">
-                    <label for="name">
-                      <!-- <i class="fas fa-user"></i> -->
-                    </label>
-                    <input type="text" name="name" id="name" placeholder="用戶名稱" />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">
-                      <!-- <i class="fas fa-envelope"></i> -->
-                    </label>
-                    <input type="email" name="email" id="email" placeholder="電子郵件地址" />
-                  </div>
-                  <div class="form-group">
-                    <label for="pass">
-                      <!-- <i class="fas fa-lock"></i> -->
-                    </label>
-                    <input type="password" name="pass" id="pass" placeholder="密碼" />
-                  </div>
-                  <div class="form-group">
-                    <label for="re-pass">
-                      <!-- <i class="fas fa-lock"></i> -->
-                    </label>
-                    <input type="password" name="re_pass" id="re_pass" placeholder="確認密碼" />
-                  </div>
-                  <div class="form-group">
-                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                    <label for="agree-term" class="label-agree-term">
-                      <span><span> </span></span>我已閱讀並接受<a href="#" class="font-weight-bold">使用條款</a>和<a href="#" class="font-weight-bold">隱私權政策</a>。
-                    </label>
-                  </div>
-                  <div class="form-group form-button">
-                    <input type="submit" name="signup" id="signup" class="form-submit" value="註冊" />
-                  </div>
-                </form>
+            <h2 class="mb-3">用戶註冊</h2>
+            <form method="POST" id="register-form">
+              <div class="form-group">
+                <label for="name"> </label>
+                <input type="text" name="name" id="name" class="text-input" placeholder="用戶名稱" />
               </div>
-            </div>
+              <div class="form-group">
+                <label for="email"> </label>
+                <input type="email" name="email" id="email" class="text-input" placeholder="電子郵件地址" />
+              </div>
+              <div class="form-group">
+                <label for="pass"> </label>
+                <input type="password" name="pass" id="pass" class="text-input" placeholder="密碼" />
+              </div>
+              <div class="form-group">
+                <label for="re-pass"> </label>
+                <input type="password" name="re_pass" id="re_pass" class="text-input" placeholder="確認密碼" />
+              </div>
+              <div class="form-group custom-control custom-checkbox">
+                <input type="checkbox" name="agree-term" id="agree-term" class="custom-control-input" />
+                <label for="agree-term" class="custom-control-label"> 我已閱讀並接受<a href="#" class="font-weight-bold">使用條款</a>和<a href="#" class="font-weight-bold">隱私權政策</a>。 </label>
+              </div>
+              <div class="form-group form-button">
+                <input type="submit" name="signup" id="signup" class="form-submit" value="註冊" />
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center align-self-center my-3"><img src="img/reg/reg_img.png" alt="" width="400px" /></div>
