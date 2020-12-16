@@ -95,22 +95,22 @@
             <form method="POST" id="register-form">
               <div class="form-group">
                 <label for="name"> </label>
-                <input type="text" name="name" id="name" class="text-input" placeholder="用戶名稱" />
+                <input type="text" name="name" id="name" class="text-input" placeholder="用戶名稱" required />
               </div>
               <div class="form-group">
                 <label for="email"> </label>
-                <input type="email" name="email" id="email" class="text-input" placeholder="電子郵件地址" />
+                <input type="email" name="email" id="email" class="text-input" placeholder="電子郵件地址" required />
               </div>
               <div class="form-group">
                 <label for="pass"> </label>
-                <input type="password" name="pass" id="pass" class="text-input" placeholder="密碼" />
+                <input type="password" name="pass" id="pass" class="text-input" placeholder="密碼" required />
               </div>
               <div class="form-group">
                 <label for="re-pass"> </label>
-                <input type="password" name="re_pass" id="re_pass" class="text-input" placeholder="確認密碼" />
+                <input type="password" name="re_pass" id="re_pass" class="text-input" placeholder="確認密碼" required />
               </div>
               <div class="form-group custom-control custom-checkbox">
-                <input type="checkbox" name="agree-term" id="agree-term" class="custom-control-input" />
+                <input type="checkbox" name="agree-term" id="agree-term" class="custom-control-input" required />
                 <label for="agree-term" class="custom-control-label">
                   我已閱讀並接受
                   <a href="terms-service.html" data-toggle="modal" data-target="#terms-service" class="font-weight-bold">使用條款</a>
@@ -120,7 +120,7 @@
                 </label>
               </div>
               <div class="form-group form-button">
-                <input type="submit" name="signup" id="signup" class="form-submit" value="註冊" />
+                <button type="button" name="signup" id="signup" class="form-submit">註冊</button>
               </div>
             </form>
           </div>
