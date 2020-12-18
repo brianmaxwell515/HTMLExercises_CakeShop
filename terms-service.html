@@ -77,7 +77,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cart.html" data-toggle="modal" data-target="#cart_modal">
+              <a class="nav-link" href="cart.html">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-tag">3</span>
               </a>
@@ -207,82 +207,3 @@
     </footer>
   </body>
 </html>
-
-<!-- Cart pop-up menu -->
-<div class="modal fade" id="cart_modal" tabindex="-1" role="dialog" aria-labelledby="example_modal_label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-bottom-0">
-        <h5 class="modal-title" id="example_modal_label">購物車</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="table table-image">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">商品名稱</th>
-              <th scope="col">價錢</th>
-              <th scope="col">數量</th>
-              <!-- <th scope="col">總額</th> -->
-              <th scope="col">移除</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="w-25">
-                <img src="img/whole_cake/5719.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
-              </td>
-              <td>Chocolate cake 1</td>
-              <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input1" value="1" /></td>
-              <!-- <td>$450</td> -->
-              <td>
-                <a href="#" class="text-pink">
-                  <i class="fa fa-times"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td class="w-25">
-                <img src="img/whole_cake/5720.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
-              </td>
-              <td>Chocolate cake 2</td>
-              <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input1" value="1" /></td>
-              <!-- <td>$450</td> -->
-              <td>
-                <a href="#" class="text-pink">
-                  <i class="fa fa-times"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td class="w-25">
-                <img src="img/whole_cake/5722.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
-              </td>
-              <td>Chocolate cake 3</td>
-              <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input1" value="1" /></td>
-              <!-- <td>$450</td> -->
-              <td>
-                <a href="#" class="text-pink">
-                  <i class="fa fa-times"></i>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="d-flex justify-content-end">
-          <h5>總額 : <span class="price text-pink">TWD$ 1,350</span></h5>
-        </div>
-      </div>
-      <div class="modal-footer border-top-0 d-flex justify-content-between">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        <button type="button" class="btn btn-pink">結帳</button>
-      </div>
-    </div>
-  </div>
-</div>

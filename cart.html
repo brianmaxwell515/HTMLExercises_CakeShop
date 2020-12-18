@@ -25,12 +25,6 @@
     <!-- Bootstrap js-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- fancybox js -->
-    <script src="js/jquery.fancybox.min.js"></script>
-    <!-- notify -->
-    <script src="js/notify.min.js"></script>
-    <!-- flickity slider -->
-    <script src="js/flickity.pkgd.min.js"></script>
 
     <title>Sift 巧克力蛋糕 - 蛋糕 | Sift Desserts</title>
   </head>
@@ -98,105 +92,95 @@
       </div>
     </nav>
 
-    <!-- Contect -->
+    <!-- Cart Contect -->
     <div class="container">
-      <div class="row bg-white py-4">
-        <!-- Product image -->
-        <div class="col-12 col-lg-6">
-          <div class="row mb-3">
-            <div class="col-12 mb-3">
-              <div class="carousel" data-flickity='{ "wrapAround": true, "imagesLoaded": true}'>
-                <div class="carousel-cell">
-                  <a href="img/whole_cake/5719_L.jpg" data-fancybox="images" data-caption="Sift 巧克力蛋糕 (8吋)">
-                    <img src="img/whole_cake/5719_L.jpg" alt="" class="mw-100" />
-                  </a>
-                </div>
-                <div class="carousel-cell">
-                  <a href="img/whole_cake/5720_L.jpg" data-fancybox="images" data-caption="Sift 巧克力蛋糕 (8吋)">
-                    <img src="img/whole_cake/5720_L.jpg" alt="" class="mw-100" />
-                  </a>
-                </div>
-                <div class="carousel-cell">
-                  <a href="img/whole_cake/5721_L.jpg" data-fancybox="images" data-caption="Sift 巧克力蛋糕 (8吋)">
-                    <img src="img/whole_cake/5721_L.jpg" alt="" class="mw-100" />
-                  </a>
-                </div>
+      <div class="row bg-white py-4 cart">
+        <div class="col-12 border-bottom mb-0 mb-md-3">
+          <h5 class="px-2">我的購物車</h5>
+        </div>
+        <!-- Product 1 -->
+        <div class="col-4 px-2 px-md-3 text-center py-4 border-bottom">
+          <a href="product-0001.html">
+            <img src="img/whole_cake/5719.jpg" />
+          </a>
+        </div>
+        <div class="col-8 px-2 px-md-3 py-4 border-bottom">
+          <div class="row v-center-no-align">
+            <div class="col-12"><a href="product-0001.html"><h5>Sift 巧克力蛋糕 (8吋)</h5></a></div>
+            <div class="col-12 pb-1 pb-sm-4 pb-md-5"><p>$450</p></div>
+            <div class="col-8 px-2 px-md-3">
+              <div>
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus fa-xs"></i></button>
+                <input class="d-inline text-center border-0 h-2rem" min="0" name="quantity" value="1" type="number" />
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus fa-xs"></i></button>
               </div>
             </div>
+            <div class="col-4 px-2 px-md-3 align-self-center text-center">
+              <a href="#">
+                <p>
+                  <i class="fas fa-times"></i> 移除</div>
+                </p>
+              </a>
           </div>
         </div>
-        <!-- Product details -->
-        <div class="col-12 col-lg-6 px-4" id="product_detail">
-          <div class="pb-3">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb bg-white p-0">
-                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-                <li class="breadcrumb-item"><a href="wholecake.html">蛋糕</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Sift 巧克力蛋糕</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="pt-2 pb-3">
-            <h3>Sift 巧克力蛋糕 (8吋)</h3>
-            <p>NT$450</p>
-          </div>
-          <div class="pt-2 pb-5">
-            <p>
-              產品資訊<br />
-              <small>
-                - 產品大小 : 8吋<br />
-                - 成分 : 巧克力戚風蛋糕、巧克力鮮奶油、卡士達餡、巧克力淋面
-              </small>
-            </p>
-          </div>
-          <div class="pt-2 pb-3">
-            <div class="row">
-              <div class="col-12">
-                <p>購買數量</p>
-              </div>
-              <div class="col-12 col-lg-4 mb-2">
-                <div class="w-100 text-center v-center">
-                  <button class="d-inline bg-white border-0 h-4rem" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus"></i></button>
-                  <input class="d-inline w-50 text-center border-0 h-4rem" min="0" name="quantity" value="1" type="number" />
-                  <button class="d-inline bg-white border-0 h-4rem" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus"></i></button>
-                </div>
-              </div>
-              <div class="col-12 col-lg-8 mb-2">
-                <div class="w-100">
-                  <a href="#">
-                    <div class="d-block bg-pink text-light h-4rem">
-                      <div class="text-center v-center">加入購物車</div>
-                    </div>
-                  </a>
-                </div>
+        
+        <!-- Product 2 -->
+        <div class="col-4 px-2 px-md-3 text-center py-4 border-bottom">
+          <a href="product-0001.html">
+            <img src="img/whole_cake/5720.jpg" />
+          </a>
+        </div>
+        <div class="col-8 px-2 px-md-3 py-4 border-bottom">
+          <div class="row v-center-no-align">
+            <div class="col-12"><a href="privacy-term.html"><h5>焦糖蘋果</h5></a></div>
+            <div class="col-12 pb-1 pb-sm-4 pb-md-5"><p>$315</p></div>
+            <div class="col-8 px-2 px-md-3">
+              <div>
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus fa-xs"></i></button>
+                <input class="d-inline text-center border-0 h-2rem" min="0" name="quantity" value="1" type="number" />
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus fa-xs"></i></button>
               </div>
             </div>
-          </div>
-          <div class="pt-2 pb-3">
-            <div class="row">
-              <div class="col-12">
-                <a href="#" class="mr-5">
-                  <small><i class="far fa-heart pr-3"></i>加入收藏</small>
-                </a>
-                <a href="#">
-                  <small><i class="fas fa-share-alt pr-3"></i>分享</small>
-                </a>
-              </div>
-            </div>
+            <div class="col-4 px-2 px-md-3 align-self-center text-center">
+              <a href="#">
+                <p>
+                  <i class="fas fa-times"></i> 移除</div>
+                </p>
+              </a>
           </div>
         </div>
-      </div>
-      <!-- 商品資訊 -->
-      <div class="row py-5 px-2">
-        <div class="col-12 pb-3">
-          <div class="d-flex justify-content-center pb-3">
-            <div class="text-center border-bottom-pink">
-              <h5>商品資訊</h5>
+        
+        <!-- Product 3 -->
+        <div class="col-4 px-2 px-md-3 text-center py-4 border-bottom">
+          <a href="product-0001.html">
+            <img src="img/whole_cake/5721.jpg" />
+          </a>
+        </div>
+        <div class="col-8 px-2 px-md-3 py-4 border-bottom">
+          <div class="row v-center-no-align">
+            <div class="col-12"><a href="product-0001.html"><h5>巧克力榛子蛋糕</h5></a></div>
+            <div class="col-12 pb-1 pb-sm-4 pb-md-5"><p>$450</p></div>
+            <div class="col-8 px-2 px-md-3">
+              <div>
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus fa-xs"></i></button>
+                <input class="d-inline text-center border-0 h-2rem" min="0" name="quantity" value="1" type="number" />
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus fa-xs"></i></button>
+              </div>
             </div>
+            <div class="col-4 px-2 px-md-3 align-self-center text-center">
+              <a href="#">
+                <p>
+                  <i class="fas fa-times"></i> 移除</div>
+                </p>
+              </a>
           </div>
-          <div class="text-center">
-            <img src="img/whole_cake/5719_poster.jpg" alt="" width="100%" />
-          </div>
+        </div>
+        
+        <div class="col-12 d-flex justify-content-end pt-3 pt-md-4">
+          <h5 class=" my-0 mx-4 align-self-center">總額 : <span class="price text-pink">TWD$ 1,350</span></h5>
+        </div>
+        <div class="col-12 d-flex justify-content-end pt-3 pt-md-4">
+          <button type="button" class="btn btn-pink"><h5 class="my-0 mx-4 align-self-center">結帳</h5></button>
         </div>
       </div>
       <!-- 相關產品 -->
@@ -311,82 +295,3 @@
     </footer>
   </body>
 </html>
-
-<!-- Cart pop-up menu -->
-<div class="modal fade" id="cart_modal" tabindex="-1" role="dialog" aria-labelledby="example_modal_label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-bottom-0">
-        <h5 class="modal-title" id="example_modal_label">購物車</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="table table-image">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">商品名稱</th>
-              <th scope="col">價錢</th>
-              <th scope="col">數量</th>
-              <!-- <th scope="col">總額</th> -->
-              <th scope="col">移除</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="w-25">
-                <img src="img/whole_cake/5719.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
-              </td>
-              <td>Chocolate cake 1</td>
-              <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input1" value="1" /></td>
-              <!-- <td>$450</td> -->
-              <td>
-                <a href="#" class="text-pink">
-                  <i class="fa fa-times"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td class="w-25">
-                <img src="img/whole_cake/5720.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
-              </td>
-              <td>Chocolate cake 2</td>
-              <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input2" value="1" /></td>
-              <!-- <td>$450</td> -->
-              <td>
-                <a href="#" class="text-pink">
-                  <i class="fa fa-times"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td class="w-25">
-                <img src="img/whole_cake/5722.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
-              </td>
-              <td>Chocolate cake 3</td>
-              <td>$450</td>
-              <td class="qty"><input type="text" class="form-control" id="input3" value="1" /></td>
-              <!-- <td>$450</td> -->
-              <td>
-                <a href="#" class="text-pink">
-                  <i class="fa fa-times"></i>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="d-flex justify-content-end">
-          <h5>總額 : <span class="price text-pink">TWD$ 1,350</span></h5>
-        </div>
-      </div>
-      <div class="modal-footer border-top-0 d-flex justify-content-between">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        <button type="button" class="btn btn-pink">結帳</button>
-      </div>
-    </div>
-  </div>
-</div>
