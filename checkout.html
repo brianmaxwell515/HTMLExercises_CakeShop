@@ -263,6 +263,76 @@
                   </div>
                 </div>
 
+                <!-- 付款資料 -->
+                <div class="mb-5 p-4 border">
+                  <div class="border-bottom">
+                    <h5 class="px-2">付款資料</h5>
+                  </div>
+
+                  <div class="my-3">
+                    <!-- List group -->
+                    <div class="list-group list-group-sm mb-7">
+                      <!-- 信用卡 -->
+                      <div class="list-group-item">
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" id="checkoutPaymentCard" name="payment" type="radio" data-toggle="collapse" data-action="show" data-target="#checkoutPaymentCardCollapse" aria-expanded="true" />
+                          <label class="custom-control-label" for="checkoutPaymentCard"> 信用卡 </label>
+                        </div>
+                      </div>
+                      <div class="list-group-item py-0 collapse show" id="checkoutPaymentCardCollapse">
+                        <div class="form-row pb-5">
+                          <div class="col-12">
+                            <div class="my-3">
+                              <label for="checkoutPaymentCardNumber" class="mb-0">信用卡號碼</label>
+                              <input type="text" name="checkoutPaymentCardNumber" class="text-input" placeholder="" required />
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="my-3">
+                              <label for="checkoutPaymentCardName" class="mb-0">持卡人名字</label>
+                              <input type="text" name="checkoutPaymentCardName" class="text-input" placeholder="" required />
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="my-3">
+                              <label for="checkoutPaymentExpiry" class="mb-0">有效日期</label>
+                              <input type="tel" id="checkoutPaymentCardExpiry" class="text-input" name="order[payment_data][expiry_date]" placeholder="MM/YY" ng-pattern="/^[0-9]{2}\/[0-9]{2}$/" required />
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="my-3">
+                              <label for="checkoutPaymentCardCVV" class="mb-0">CVV</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control" id="checkoutPaymentCardCVV" placeholder="" required />
+                                <div class="input-group-append">
+                                  <span
+                                    class="input-group-text"
+                                    data-toggle="popover"
+                                    data-placement="top"
+                                    data-trigger="hover"
+                                    data-content="The CVV Number on your credit card or debit card is a 3 digit number on VISA, MasterCard and Discover branded credit and debit cards."
+                                    data-original-title=""
+                                    title=""
+                                  >
+                                    <i class="fas fa-question-circle"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ATM 轉帳 -->
+                      <div class="list-group-item">
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" id="checkoutPaymentATM" name="payment" type="radio" data-toggle="collapse" data-action="hide" data-target="#checkoutPaymentCardCollapse" aria-expanded="true" />
+                          <label class="custom-control-label" for="checkoutPaymentATM"> ATM 轉帳 </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- 其他 -->
                 <div class="mb-5 p-4 border">
                   <div class="border-bottom">
@@ -274,7 +344,7 @@
                       <option selected>- 發票類型 -</option>
                       <option value="1">二聯式統一發票</option>
                       <option value="2">三聯式統一發票</option>
-                      <option value="3">電子發票</option>
+                      <option value="3">捐贈發票</option>
                     </select>
                   </div>
                   <div class="my-3">
