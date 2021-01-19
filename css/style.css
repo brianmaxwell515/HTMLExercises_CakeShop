@@ -575,7 +575,7 @@ input.text-input {
   width: 100%;
   display: block;
   border: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1.5px solid rgb(204, 204, 204);
   padding: 6px 30px;
   font-family: Poppins;
   box-sizing: border-box;

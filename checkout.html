@@ -97,7 +97,7 @@
 
     <!-- Cart Contect -->
     <div class="container">
-      <div class="row bg-white py-4 cart">
+      <div class="row bg-white py-5 cart">
         <div class="col-12 border-bottom mb-0 mb-md-2">
           <h5 class="px-2">訂單結帳</h5>
         </div>
@@ -167,91 +167,129 @@
       <!-- Payment -->
       <div class="row">
         <div class="col-12 col-md-7">
-          <div class="p-1 p-md-3">
-            <div class="border-bottom">
-              <h5 class="px-2">送貨資料</h5>
-            </div>
-            <form method="POST" id="register-form" class="py-4">
+          <div class="p-1 p-md-0">
+            <form method="POST" id="register-form">
               <div class="form-group">
-                <label for="formGroupExampleInput">顧客名稱</label>
-                <div class="row">
-                  <div class="col">
-                    <label for="firstname"> </label>
-                    <input name="firstname" type="text" class="text-input" placeholder="名字" required />
+                <!-- 顧客資料 -->
+                <div class="mb-5 p-4 border">
+                  <div class="border-bottom">
+                    <h5 class="px-2">顧客資料</h5>
                   </div>
-                  <div class="col">
-                    <label for="lastname"> </label>
-                    <input name="lastname" type="text" class="text-input" placeholder="姓氏" required />
+                  <div class="row">
+                    <div class="col-12 col-lg-6 my-3">
+                      <label for="firstname" class="mb-0">名字 *</label>
+                      <input name="firstname" type="text" class="text-input" placeholder="" required />
+                    </div>
+                    <div class="col-12 col-lg-6 my-3">
+                      <label for="lastname" class="mb-0">姓氏 *</label>
+                      <input name="lastname" type="text" class="text-input" placeholder="" required />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 my-3">
+                      <label for="tel" class="mb-0">電話號碼 *</label>
+                      <input name="tel" type="text" class="text-input" placeholder="" required />
+                    </div>
+                    <div class="col-12 col-lg-6 my-3">
+                      <label for="email" class="mb-0">電子郵件地址 *</label>
+                      <input name="email" type="text" class="text-input" placeholder="" required />
+                    </div>
                   </div>
                 </div>
 
-                <label for="formGroupExampleInput" class="mt-5">送貨地點: 台灣</label>
-                <div class="row">
-                  <div class="col">
-                    <label for="address_1"> </label>
-                    <select name="address_1" class="custom-select my-1 mr-sm-2" id="address_1">
-                      <option selected>縣 / 市</option>
-                      <option value="1">臺北市</option>
-                      <option value="2">新北市</option>
-                      <option value="3">桃園市</option>
-                      <option value="4">臺中市</option>
-                      <option value="5">臺南市</option>
-                      <option value="6">高雄市</option>
-                      <option value="7">基隆市</option>
-                      <option value="8">新竹市</option>
-                      <option value="9">嘉義市</option>
-                      <option value="10">新竹縣</option>
-                      <option value="11">苗栗縣</option>
-                      <option value="12">彰化縣</option>
-                      <option value="13">南投縣</option>
-                      <option value="14">雲林縣</option>
-                      <option value="15">嘉義縣</option>
-                      <option value="16">屏東縣</option>
-                      <option value="17">宜蘭縣</option>
-                      <option value="18">花蓮縣</option>
-                      <option value="19">臺東縣</option>
-                      <option value="20">澎湖縣</option>
-                    </select>
+                <!-- 送貨資料 -->
+                <div class="mb-5 p-4 border">
+                  <div class="border-bottom">
+                    <h5 class="px-2">送貨資料</h5>
                   </div>
-                  <div class="col">
-                    <label for="address_2"> </label>
-                    <select name="address_2" class="custom-select my-1 mr-sm-2" id="address_2">
-                      <option selected>地區</option>
-                      <option value="1">中正區</option>
-                      <option value="2">大同區</option>
-                      <option value="3">中山區</option>
-                      <option value="4">松山區</option>
-                      <option value="5">大安區</option>
-                      <option value="6">萬華區</option>
-                      <option value="7">信義區</option>
-                      <option value="8">士林區</option>
-                      <option value="9">北投區</option>
-                      <option value="10">內湖區</option>
-                      <option value="11">南港區</option>
-                      <option value="12">文山區</option>
-                    </select>
+                  <div class="row my-3">
+                    <div class="col">
+                      <label for="address_0" class="mb-0">國家 *</label>
+                      <select name="address_0" class="custom-select my-1 mr-sm-2">
+                        <option selected>- 國家 -</option>
+                        <option value="1">台灣</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col">
+                      <label for="address_1" class="mb-0">縣 / 市 *</label>
+                      <select name="address_1" class="custom-select my-1 mr-sm-2">
+                        <option selected>- 縣 / 市 -</option>
+                        <option value="1">臺北市</option>
+                        <option value="2">新北市</option>
+                        <option value="3">桃園市</option>
+                        <option value="4">臺中市</option>
+                        <option value="5">臺南市</option>
+                        <option value="6">高雄市</option>
+                        <option value="7">基隆市</option>
+                        <option value="8">新竹市</option>
+                        <option value="9">嘉義市</option>
+                        <option value="10">新竹縣</option>
+                        <option value="11">苗栗縣</option>
+                        <option value="12">彰化縣</option>
+                        <option value="13">南投縣</option>
+                        <option value="14">雲林縣</option>
+                        <option value="15">嘉義縣</option>
+                        <option value="16">屏東縣</option>
+                        <option value="17">宜蘭縣</option>
+                        <option value="18">花蓮縣</option>
+                        <option value="19">臺東縣</option>
+                        <option value="20">澎湖縣</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="address_2" class="mb-0">地區 *</label>
+                      <select name="address_2" class="custom-select my-1 mr-sm-2">
+                        <option selected>- 地區 -</option>
+                        <option value="1">中正區</option>
+                        <option value="2">大同區</option>
+                        <option value="3">中山區</option>
+                        <option value="4">松山區</option>
+                        <option value="5">大安區</option>
+                        <option value="6">萬華區</option>
+                        <option value="7">信義區</option>
+                        <option value="8">士林區</option>
+                        <option value="9">北投區</option>
+                        <option value="10">內湖區</option>
+                        <option value="11">南港區</option>
+                        <option value="12">文山區</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <label for="address_3" class="mb-0">送貨地址 *</label>
+                    <input type="text" name="address_3" class="text-input" placeholder="" required />
                   </div>
                 </div>
-                <label for="address_3"> </label>
-                <input type="text" name="address_3" id="address_3" class="text-input" placeholder="地址" required />
-                <label for="name"> </label>
-                <input type="tel" name="mobile" id="mobile" class="text-input" placeholder="電話號碼" required />
-                <label for="email"> </label>
-                <input type="email" name="email" id="email" class="text-input" placeholder="電子郵件地址" required />
-                <label for="formGroupExampleInput" class="mt-5">其他</label>
-                <label for="invoice"> </label>
-                <select name="invoice" class="custom-select my-1 mr-sm-2" id="invoice">
-                  <option selected>發票類型 請選擇...</option>
-                  <option value="1">二聯式統一發票</option>
-                  <option value="2">三聯式統一發票</option>
-                  <option value="3">電子發票</option>
-                </select>
-                <label for="company_id"> </label>
-                <input type="text" name="company_id" id="company_id" class="text-input" placeholder="公司行號抬頭 (選填)" />
-                <label for="tax_id"> </label>
-                <input type="text" name="tax_id" id="tax_id" class="text-input" placeholder="統一編號 (選填)" />
-                <label for="remark"> </label>
-                <input type="text" name="remark" id="remark" class="text-input" placeholder="訂單備註 (選填)" />
+
+                <!-- 其他 -->
+                <div class="mb-5 p-4 border">
+                  <div class="border-bottom">
+                    <h5 class="px-2">其他</h5>
+                  </div>
+                  <div class="my-3">
+                    <label for="invoice" class="mb-0">發票類型 *</label>
+                    <select name="invoice" class="custom-select my-1 mr-sm-2" id="invoice">
+                      <option selected>- 發票類型 -</option>
+                      <option value="1">二聯式統一發票</option>
+                      <option value="2">三聯式統一發票</option>
+                      <option value="3">電子發票</option>
+                    </select>
+                  </div>
+                  <div class="my-3">
+                    <label for="company_id" class="mb-0">公司行號抬頭 (選填)</label>
+                    <input type="text" name="company_id" id="company_id" class="text-input" placeholder="" />
+                  </div>
+                  <div class="my-3">
+                    <label for="tax_id" class="mb-0">統一編號 (選填)</label>
+                    <input type="text" name="tax_id" id="tax_id" class="text-input" placeholder="" />
+                  </div>
+                  <div class="my-3">
+                    <label for="remark" class="mb-0">訂單備註 (選填)</label>
+                    <input type="text" name="remark" id="remark" class="text-input" placeholder="" />
+                  </div>
+                </div>
               </div>
             </form>
           </div>
