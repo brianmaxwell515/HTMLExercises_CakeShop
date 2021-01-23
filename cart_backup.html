@@ -93,93 +93,156 @@
     </nav>
 
     <!-- Cart Contect -->
-    <div class="container mb-6">
-      <!-- Banner -->
+    <div class="container">
       <div class="row bg-white py-4 cart">
-        <div class="col-12 my-3 mx-1 my-md-5 m-lg-5">
-          <img src="img/cart/cart_banner.png" alt="" />
+        <div class="col-12 border-bottom mb-0 mb-md-3">
+          <h5 class="px-2">我的購物車</h5>
+        </div>
+        <!-- Product 1 -->
+        <div class="col-4 px-2 px-md-3 text-center py-4 border-bottom">
+          <a href="product-0001.html">
+            <img src="img/whole_cake/5719.jpg" />
+          </a>
+        </div>
+        <div class="col-8 px-2 px-md-3 py-4 border-bottom">
+          <div class="row v-center-no-align">
+            <div class="col-12"><a href="product-0001.html"><h5>Sift 巧克力蛋糕 (8吋)</h5></a></div>
+            <div class="col-12 pb-1 pb-sm-4 pb-md-5"><p>NT$450</p></div>
+            <div class="col-8 px-2 px-md-3">
+              <div>
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus fa-xs"></i></button>
+                <input class="d-inline text-center border-0 h-2rem" min="0" name="quantity" value="1" type="number" />
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus fa-xs"></i></button>
+              </div>
+            </div>
+            <div class="col-4 px-2 px-md-3 align-self-center text-center">
+              <a href="#">
+                <p>
+                  <i class="fas fa-times"></i> 移除</div>
+                </p>
+              </a>
+          </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="col-4 px-2 px-md-3 text-center py-4 border-bottom">
+          <a href="product-0001.html">
+            <img src="img/pastries/6841.jpg" />
+          </a>
+        </div>
+        <div class="col-8 px-2 px-md-3 py-4 border-bottom">
+          <div class="row v-center-no-align">
+            <div class="col-12"><a href="privacy-term.html"><h5>焦糖蘋果</h5></a></div>
+            <div class="col-12 pb-1 pb-sm-4 pb-md-5"><p>NT$315</p></div>
+            <div class="col-8 px-2 px-md-3">
+              <div>
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus fa-xs"></i></button>
+                <input class="d-inline text-center border-0 h-2rem" min="0" name="quantity" value="1" type="number" />
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus fa-xs"></i></button>
+              </div>
+            </div>
+            <div class="col-4 px-2 px-md-3 align-self-center text-center">
+              <a href="#">
+                <p>
+                  <i class="fas fa-times"></i> 移除</div>
+                </p>
+              </a>
+          </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="col-4 px-2 px-md-3 text-center py-4 border-bottom">
+          <a href="product-0001.html">
+            <img src="img/whole_cake/5721.jpg" />
+          </a>
+        </div>
+        <div class="col-8 px-2 px-md-3 py-4 border-bottom">
+          <div class="row v-center-no-align">
+            <div class="col-12"><a href="product-0001.html"><h5>巧克力榛子蛋糕</h5></a></div>
+            <div class="col-12 pb-1 pb-sm-4 pb-md-5"><p>NT$450</p></div>
+            <div class="col-8 px-2 px-md-3">
+              <div>
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-minus fa-xs"></i></button>
+                <input class="d-inline text-center border-0 h-2rem" min="0" name="quantity" value="1" type="number" />
+                <button class="d-inline bg-white border-0 h-2rem px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-plus fa-xs"></i></button>
+              </div>
+            </div>
+            <div class="col-4 px-2 px-md-3 align-self-center text-center">
+              <a href="#">
+                <p>
+                  <i class="fas fa-times"></i> 移除</div>
+                </p>
+              </a>
+          </div>
+        </div>
+        
+        <div class="col-12 d-flex justify-content-end pt-3 pt-md-4">
+          <h5 class=" my-0 mx-4 align-self-center">總額 : <span class="price text-pink">NT$ 1,215</span></h5>
+        </div>
+        <div class="col-12 d-flex justify-content-end pt-3 pt-md-4">
+          <a href="checkout.html">
+            <button type="button" class="btn btn-pink"><h5 class="my-0 mx-4 align-self-center">結帳</h5></button>
+          </a>
         </div>
       </div>
-
-      <!-- Product list -->
-      <ul class="list-group list-group-lg list-group-flush-x">
-        <!-- Product 1 -->
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-3">
-              <a href="#">
-                <img src="img/whole_cake/5719.jpg" alt="..." class="img-fluid150px" />
-              </a>
-            </div>
-            <div class="col">
-              <div class="d-flex mb-2 font-weight-bold"><a class="text-body" href="#">Sift 巧克力蛋糕 (8吋)</a> <span class="ml-auto">$450</span></div>
-
-              <div class="d-flex align-items-center">
-                <select class="custom-select custom-select-xxs w-auto">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <a class="font-size-xs text-gray-400 ml-auto" href="#"> <i class="fas fa-times"></i> 移除 </a>
-              </div>
+      <!-- 相關產品 -->
+      <div class="row py-3 px-2">
+        <div class="col-12 pb-3">
+          <div class="d-flex justify-content-center pb-3">
+            <div class="text-center border-bottom-pink">
+              <h5>相關產品</h5>
             </div>
           </div>
-        </li>
-
-        <!-- Product 2 -->
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-3">
-              <a href="#">
-                <img src="img/pastries/6841.jpg" alt="..." class="img-fluid150px" />
-              </a>
-            </div>
-            <div class="col">
-              <div class="d-flex mb-2 font-weight-bold"><a class="text-body" href="#">焦糖蘋果</a> <span class="ml-auto">$315</span></div>
-
-              <div class="d-flex align-items-center">
-                <select class="custom-select custom-select-xxs w-auto">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <a class="font-size-xs text-gray-400 ml-auto" href="#"> <i class="fas fa-times"></i> 移除 </a>
-              </div>
+        </div>
+        <div class="col-6 col-md-3 px-1 px-md-3">
+          <div class="card mb-4 border-0">
+            <img class="card-img-top" src="img/whole_cake/5731.jpg" alt="Cakes" />
+            <span class="card-label-1 new-product text-center">
+              <div class="v-center">NEW</div>
+            </span>
+            <div class="card-body p-0 py-2 py-md-3">
+              <p class="card-title title-tag mx-1 mx-lg-4 my-1">Sift 巧克力蛋糕</p>
+              <p class="card-text price-tag mx-1 mx-lg-4 my-1">NT$450</p>
+              <a href="product-0001.html" class="stretched-link"></a>
             </div>
           </div>
-        </li>
-
-        <!-- Product 3 -->
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-3">
-              <a href="#">
-                <img src="img/whole_cake/5721.jpg" alt="..." class="img-fluid150px" />
-              </a>
-            </div>
-            <div class="col">
-              <div class="d-flex mb-2 font-weight-bold"><a class="text-body" href="#">巧克力榛子蛋糕</a> <span class="ml-auto">$450</span></div>
-
-              <div class="d-flex align-items-center">
-                <select class="custom-select custom-select-xxs w-auto">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <a class="font-size-xs text-gray-400 ml-auto" href="#"> <i class="fas fa-times"></i> 移除 </a>
-              </div>
+        </div>
+        <div class="col-6 col-md-3 px-1 px-md-3">
+          <div class="card mb-4 border-0">
+            <img class="card-img-top" src="img/whole_cake/5720.jpg" alt="Cakes" />
+            <span class="card-label-1 dis-product">
+              <div class="v-center">70%</div>
+            </span>
+            <div class="card-body p-0 py-2 py-md-3">
+              <p class="card-title title-tag mx-1 mx-lg-4 my-1">焦糖蘋果</p>
+              <p class="card-text price-tag mx-1 mx-lg-4 my-1">NT$315&nbsp;&nbsp;&nbsp;<del>NT$450</del></p>
+              <a href="#" class="stretched-link"></a>
             </div>
           </div>
-        </li>
-      </ul>
-
-      <div class="col-12 d-flex justify-content-end pt-3 pt-md-4">
-        <h5 class="my-0 mx-4 align-self-center">總額 : <span class="price text-pink">NT$ 1,215</span></h5>
-      </div>
-      <div class="col-12 d-flex justify-content-end pt-3 pt-md-4">
-        <a href="checkout.html">
-          <button type="button" class="btn btn-pink"><h5 class="my-0 mx-4 align-self-center">結帳</h5></button>
-        </a>
+        </div>
+        <div class="col-6 col-md-3 px-1 px-md-3">
+          <div class="card mb-4 border-0">
+            <img class="card-img-top" src="img/whole_cake/5721.jpg" alt="Cakes" />
+            <span class="card-label-1 dis-product">
+              <div class="v-center">70%</div>
+            </span>
+            <div class="card-body p-0 py-2 py-md-3">
+              <p class="card-title title-tag mx-1 mx-lg-4 my-1">巧克力榛子蛋糕</p>
+              <p class="card-text price-tag mx-1 mx-lg-4 my-1">NT$315&nbsp;&nbsp;&nbsp;<del>NT$450</del></p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 px-1 px-md-3">
+          <div class="card mb-4 border-0">
+            <img class="card-img-top" src="img/whole_cake/5737.jpg" alt="Cakes" />
+            <div class="card-body p-0 py-2 py-md-3">
+              <p class="card-title title-tag mx-1 mx-lg-4 my-1">草莓覆盆子蛋糕</p>
+              <p class="card-text price-tag mx-1 mx-lg-4 my-1">NT$450</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
