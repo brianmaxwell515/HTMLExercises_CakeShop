@@ -100,12 +100,17 @@
 
     <!-- Cart Contect -->
     <div class="container">
-      <div class="row bg-white py-5 cart">
-        <div class="col-12 border-bottom mb-0 mb-md-2">
-          <h5 class="px-2">訂單結帳</h5>
+      <!-- Banner -->
+      <div class="row bg-white py-4 cart">
+        <div class="col-12 my-3 mx-1 my-md-5 m-lg-5">
+          <img src="img/cart/checkout_banner.png" alt="" />
         </div>
-        <!-- Product 1 -->
-        <div class="col-4 col-md-2 px-2 text-center py-2 border-bottom">
+      </div>
+
+      <!-- Product list -->
+      <!-- <div class="row bg-white pb-5 cart"> -->
+      <!-- Product 1 -->
+      <!-- <div class="col-4 col-md-2 px-2 text-center py-2 border-bottom">
           <a href="product-0001.html">
             <img src="img/whole_cake/5719.jpg" />
           </a>
@@ -123,10 +128,10 @@
               <p class="m-0">NT$450</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <!-- Product 2 -->
-        <div class="col-4 col-md-2 px-2 text-center py-2 border-bottom">
+      <!-- Product 2 -->
+      <!-- <div class="col-4 col-md-2 px-2 text-center py-2 border-bottom">
           <a href="product-0001.html">
             <img src="img/pastries/6841.jpg" />
           </a>
@@ -144,10 +149,10 @@
               <p class="m-0">NT$315</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <!-- Product 2 -->
-        <div class="col-4 col-md-2 px-2 text-center py-2 border-bottom">
+      <!-- Product 3 -->
+      <!-- <div class="col-4 col-md-2 px-2 text-center py-2 border-bottom">
           <a href="product-0001.html">
             <img src="img/whole_cake/5721.jpg" />
           </a>
@@ -165,8 +170,9 @@
               <p class="m-0">NT$450</p>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
+
       <!-- Payment -->
       <div class="row">
         <div class="col-12 col-md-7">
@@ -282,7 +288,7 @@
                           <label class="custom-control-label" for="checkoutPaymentCard"> 信用卡 </label>
                         </div>
                       </div>
-                      <div class="list-group-item py-0 collapse show" id="checkoutPaymentCardCollapse">
+                      <div class="list-group-item py-0 collapse" id="checkoutPaymentCardCollapse">
                         <div class="form-row pb-5">
                           <div class="col-12">
                             <div class="my-3">
@@ -327,9 +333,19 @@
                     </div>
                   </div>
                 </div>
+                <!-- 送貨資料 -->
+                <div class="mb-5 p-4 border">
+                  <div class="border-bottom">
+                    <h5 class="px-2">其他</h5>
+                  </div>
+                  <div class="row my-3"></div>
+                  <div class="my-3">
+                    <textarea class="form-control form-control-sm mb-9 mb-md-0 font-size-xs" rows="5" placeholder="訂單備註 (選填)"></textarea>
+                  </div>
+                </div>
 
                 <!-- 其他 -->
-                <div class="mb-5 p-4 border">
+                <!-- <div class="mb-5 p-4 border">
                   <div class="border-bottom">
                     <h5 class="px-2">其他</h5>
                   </div>
@@ -354,7 +370,7 @@
                     <label for="remark" class="mb-0">訂單備註 (選填)</label>
                     <input type="text" name="remark" id="remark" class="text-input" placeholder="" />
                   </div>
-                </div>
+                </div> -->
               </div>
             </form>
           </div>
@@ -384,6 +400,33 @@
               <a href="#">
                 <button type="button" class="btn btn-pink w-100"><h5 class="my-1 align-self-center">前往結帳</h5></button>
               </a>
+            </div>
+            <div class="mx-2 mt-3">
+              <!-- <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="invoice" data-toggle="collapse" data-action="show" data-target="#checkoutPaymentCardCollapse" aria-expanded="true" />
+                <label class="form-check-label" for="invoice">需要三聯式發票請打勾</label>
+              </div> -->
+              <!-- 信用卡 -->
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="invoice" name="invoice" type="checkbox" data-toggle="collapse" data-action="show" data-target="#invoiceCollapse" aria-expanded="true" />
+                <label class="custom-control-label" for="invoice"> 需要三聯式發票請打勾 </label>
+              </div>
+              <div class="list-group-item py-0 collapse" id="invoiceCollapse">
+                <div class="form-row my-3">
+                  <div class="col-12">
+                    <div class="my-3">
+                      <label for="company_id" class="mb-0">公司行號抬頭 (選填)</label>
+                      <input type="text" name="company_id" class="text-input" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="my-3">
+                      <label for="tax_id" class="mb-0">統一編號 (選填)</label>
+                      <input type="text" name="tax_id" class="text-input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="m-3">
